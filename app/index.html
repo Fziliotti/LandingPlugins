@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Fabrício Ziliotti - Eterno estudante e desenvolvedor web.</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Welcome to Fziliotti portfolio. Fabrício Ziliotti is a young web developer.">
+	<meta name="keywords" content="Fabrício, Ziliotti, Fabrício Ziliotti, Fziliotti, ffziliotti, web, developer, develop, front-end, front end, back end, javascrit, npm, node.js">
+	<meta name="author" content="Fabrício Ziliotti">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="images/favicon.png">
+
+	<!-- FB meta tags -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://fziliotti.dev/" />
+	<meta property="og:title" content="Fabrício Ziliotti - Web Developer & Forever Student." />
+	<meta property="og:description" content="Welcome to Fziliotti portfolio. Fabrício Ziliotti is a young web developer." />
+	<meta property="og:image" content="https://fziliotti.dev/images/socialpreview.png" />
+	<meta property="og:image:width" content="747" />
+	<meta property="og:image:height" content="200" />
+
+	<!--build:css css/styles.min.css-->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<!--endbuild-->
+
+	<link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+	<!-- Google Analytics -->
+
+</head>
+
+<body>
+
+	<!-- colocar isso no rodape alterando a cor do sol/lua -->
+	<!-- <div class="cloudcontainer">
+			<div class="cloud"></div>
+			<ul class="sun">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+	</div> -->
+
+
+
+	<div class="intro__logo">
+		<svg xml:space="preserve" width="160px" height="160px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+		 viewBox="0 0 7762 7762">
+			<g>
+				<path style="stroke: #FEFEFE" class="fil0 str0" d="M6385 5157c-4,-4 -11,-6 -19,-6l-4970 0c-7,0 -14,2 -19,6 -5,4 -7,10 -6,15 1,4 76,341 658,341l3705 0c582,0 657,-337 657,-341 1,-5 -1,-11 -6,-15zm-2130 238l0 0 -748 0 0 -126 748 0 0 126z" />
+				<path style="stroke: #FEFEFE" class="fil1 str1" d="M5916 4962l-4070 0c-58,0 -106,-48 -106,-106l0 -2500c0,-59 48,-107 106,-107l4070 0c59,0 107,48 107,107l0 2500c0,58 -48,106 -107,106z" />
+				<path style="stroke: #FEFEFE" class="fil0" d="M3371 3212l0 87 -469 0 0 275 401 0 0 87 -401 0 0 338 -133 0 0 -787 602 0zm772 0l0 87 -469 0 0 275 401 0 0 87 -401 0 0 338 -133 0 0 -787 602 0zm851 0l0 40c0,12 -5,24 -15,35l-553 625 558 0 0 87 -731 0 0 -42c0,-11 4,-21 13,-31l554 -627 -541 0 0 -87 715 0z" />
+				<path style="stroke: #FEFEFE" class="fil1 str2" d="M3881 75c2102,0 3806,1704 3806,3806 0,2102 -1704,3806 -3806,3806 -2102,0 -3806,-1704 -3806,-3806 0,-2102 1704,-3806 3806,-3806z" />
+			</g>
+		</svg>
+	</div>
+
+	<header class="intro">
+		<canvas id="particulas"></canvas>
+		<h1>Fabrício Fernandes Ziliotti</h1>
+		<p id="element"></p>
+	</header>
+
+	<section class="about">
+		<div class="container">
+			<h1 class="about__title"></h1>
+		</div>
+	</section>
+
+	<section class="history">
+		
+		<img class="heartCode" src="images/heartCode.png" alt="" height="100">
+		<h1 class="history__title"></h1>
+
+		<div class="parallaxContainer">
+			<img class="parallaxImage" src="images/me01.png" alt="" height="300" data-rellax-speed="4" data-rellax-zindex="2">
+			<img class="parallaxImage"src="images/tec.png" alt="" height="250" data-rellax-speed="4" data-rellax-zindex="2">
+		</div>
+
+		<p class="history__text">
+		</p>
+	</section>
+
+
+
+
+
+
+
+
+	<script src="js/particulas.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/typeit@6/dist/typeit.min.js"></script>
+	<script>
+	
+		const aboutTitle = document.querySelector('.about__title');
+		new TypeIt(aboutTitle, {
+			strings: ["Fabricio Fernandes Ziliotti", "Filho de Anezia", "Tenho dois irmaos"],
+			speed: 50,
+			waitUntilVisible: true,
+		}).go();
+
+
+		new TypeIt('.history__title', {
+			speed: 50,
+			waitUntilVisible: true,
+		})
+		.type('Some information about me')
+		.go();
+
+
+		new TypeIt('.history__text', {
+			speed: 30,
+			waitUntilVisible: true,
+		})
+		.type('My Name is Fabricio Fernandes Ziliotti')
+		.break()
+		.type('I\'m graduating in Computer Cience in <a target="_BLANK"  href="http://www.ufu.br/">Federal University of Uberlândia</a>')
+		.break()
+		.type('I\'m also participate in the  <a target="_BLANK" href="http://www.comppet.ufu.br/">CompPET</a>')
+		.go();
+
+
+
+		new TypeIt('#element', {
+				speed: 150,
+				waitUntilVisible: true
+			})
+			.type('Web Developer')
+			.delete(9)
+			.pause(500)
+			.type('Student')
+			.delete()
+			.pause(500)
+			.type('Forever Student')
+			.pause(500)
+			.options({
+				speed: 50
+			})
+			.delete()
+			.type('go check the rest of my site! =)')
+			.go();
+
+
+	
+	</script>
+
+	<!-- <script src="js/onLeaveIntent.js"></script>
+		<script>
+			function callback() {
+				alert('Ei! Antes de sair, dá uma olhada no meu blog pessoal https://fziliotti.github.io/BlogFziliotti/');
+			}
+			const delay = 1000; // time in milliseconds defined to start tracking the user
+			const onLeaveIntent = new OnLeaveIntent(callback, delay);
+		</script> -->
+</body>
+
+
+</html>
